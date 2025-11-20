@@ -17,3 +17,5 @@ export PATH="/home/mark/.local/share/../bin:$PATH"
 
 # Load Angular CLI autocompletion.
 source <(ng completion script)
+
+[[ "$TERM_PROGRAM" == "kiro" ]] && . "$(kiro --locate-shell-integration-path bash)"
