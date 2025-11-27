@@ -21,3 +21,12 @@ source <(ng completion script)
 [[ "$TERM_PROGRAM" == "kiro" ]] && . "$(kiro --locate-shell-integration-path bash)"
 
 export BW_SESSION="GjLbSSwWC8scZ8L8KfTSNLpBPAjMkFR96/wCYIaHyy2de7z7mHcwLDvooE7KRK9FiMZcK57WElFBiiT3odAQNw=="
+
+function y() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+	yazi "$@" --cwd-file="$tmp"
+	IFS= read -r -d '' cwd < "$tmp"
+	[ -n "$cwd" ] && [ "$cwd" != "$PWD" ] && builtin cd -- "$cwd"
+	rm -f -- "$tmp"
+}
+
