@@ -4,7 +4,7 @@
   "position": "left",
   "spacing": 0,
   "width": 40,
-  "modules-left": ["custom/omarchy", "custom/spacer", "idle_inhibitor","custom/spacer","hyprland/workspaces"],
+  "modules-left": ["custom/omarchy","custom/spacer","hyprland/workspaces", "custom/spacer", "idle_inhibitor"],
   "modules-center": ["custom/weather", "custom/spacer", "clock", "custom/spacer", "custom/update", "custom/screenrecording-indicator"],
   "modules-right": [
     "group/tray-expander",
