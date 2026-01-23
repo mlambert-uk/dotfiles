@@ -4,10 +4,24 @@
   "position": "left",
   "spacing": 0,
   "width": 40,
-  "modules-left": ["custom/omarchy","custom/spacer","hyprland/workspaces", "custom/spacer", "idle_inhibitor"],
-  "modules-center": ["custom/weather", "custom/spacer", "clock", "custom/spacer", "custom/update", "custom/screenrecording-indicator"],
+  "modules-left": [
+    "custom/omarchy",
+    "custom/spacer",
+    "hyprland/workspaces",
+    "custom/spacer",
+    "idle_inhibitor"
+  ],
+  "modules-center": [
+    "custom/weather",
+    "custom/spacer",
+    "clock",
+    "custom/spacer",
+    "custom/update",
+    "custom/screenrecording-indicator"
+  ],
   "modules-right": [
     "group/tray-expander",
+    "custom/hyprwhspr",
     "bluetooth",
     "network",
     "pulseaudio",
@@ -18,7 +32,7 @@
     "on-click": "activate",
     "format": "{icon}",
     "format-icons": {
-      "default": "",
+      "default": "\uea71",
       "1": "1",
       "2": "2",
       "3": "3",
@@ -45,7 +59,7 @@
     "tooltip-format": "Omarchy Menu\n\nSuper + Alt + Space"
   },
   "custom/update": {
-    "format": "",
+    "format": "\uf021",
     "exec": "omarchy-update-available",
     "on-click": "omarchy-launch-floating-terminal-with-presentation omarchy-update",
     "tooltip-format": "Omarchy update available",
@@ -56,24 +70,24 @@
     "format": " ",
     "tooltip": false
   },
- "idle_inhibitor": { 
-  "format": "{icon} ", 
-  "format-icons": { 
-    "activated": "\uf06e", 
-    "deactivated": "\uf070" 
-  }
-},
+  "idle_inhibitor": {
+    "format": "{icon} ",
+    "format-icons": {
+      "activated": "\uf06e",
+      "deactivated": "\uf070"
+    }
+  },
   "custom/weather": {
-    "format": "{}°",
+    "format": "{}\u00b0",
     "tooltip": true,
     "interval": 3600,
     "rotate": 90,
     "exec": "wttrbar --location todwick",
     "return-type": "json"
-},
+  },
   "cpu": {
     "interval": 5,
-    "format": "󰍛",
+    "format": "\udb80\udf5b",
     "on-click": "omarchy-launch-or-focus-tui btop"
   },
   "clock": {
@@ -82,17 +96,27 @@
     "rotate": 90,
     "tooltip": true,
     "tooltip-format": "{tz_list}",
-    "timezones": ["Europe/London", "America/Mexico_City", "Asia/Bangkok"],
+    "timezones": [
+      "Europe/London",
+      "America/Mexico_City",
+      "Asia/Bangkok"
+    ],
     "on-click-right": "omarchy-launch-floating-terminal-with-presentation omarchy-tz-select"
   },
   "network": {
-    "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
+    "format-icons": [
+      "\udb82\udd2f",
+      "\udb82\udd1f",
+      "\udb82\udd22",
+      "\udb82\udd25",
+      "\udb82\udd28"
+    ],
     "format": "{icon}",
     "format-wifi": "{icon}",
-    "format-ethernet": "󰀂",
-    "format-disconnected": "󰤮",
-    "tooltip-format-wifi": "{essid} ({frequency} GHz)\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
-    "tooltip-format-ethernet": "⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
+    "format-ethernet": "\udb80\udc02",
+    "format-disconnected": "\udb82\udd2e",
+    "tooltip-format-wifi": "{essid} ({frequency} GHz)\n\u21e3{bandwidthDownBytes}  \u21e1{bandwidthUpBytes}",
+    "tooltip-format-ethernet": "\u21e3{bandwidthDownBytes}  \u21e1{bandwidthUpBytes}",
     "tooltip-format-disconnected": "Disconnected",
     "interval": 3,
     "spacing": 1,
@@ -102,14 +126,36 @@
     "format": "{capacity}% {icon}",
     "format-discharging": "{icon}",
     "format-charging": "{icon}",
-    "format-plugged": "",
+    "format-plugged": "\uf1e6",
     "format-icons": {
-      "charging": ["󰢜", "󰂆", "󰂇", "󰂈", "󰢝", "󰂉", "󰢞", "󰂊", "󰂋", "󰂅"],
-      "default": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
+      "charging": [
+        "\udb82\udc9c",
+        "\udb80\udc86",
+        "\udb80\udc87",
+        "\udb80\udc88",
+        "\udb82\udc9d",
+        "\udb80\udc89",
+        "\udb82\udc9e",
+        "\udb80\udc8a",
+        "\udb80\udc8b",
+        "\udb80\udc85"
+      ],
+      "default": [
+        "\udb80\udc7a",
+        "\udb80\udc7b",
+        "\udb80\udc7c",
+        "\udb80\udc7d",
+        "\udb80\udc7e",
+        "\udb80\udc7f",
+        "\udb80\udc80",
+        "\udb80\udc81",
+        "\udb80\udc82",
+        "\udb80\udc79"
+      ]
     },
-    "format-full": "󰂅",
-    "tooltip-format-discharging": "{power:>1.0f}W↓ {capacity}%",
-    "tooltip-format-charging": "{power:>1.0f}W↑ {capacity}%",
+    "format-full": "\udb80\udc85",
+    "tooltip-format-discharging": "{power:>1.0f}W\u2193 {capacity}%",
+    "tooltip-format-charging": "{power:>1.0f}W\u2191 {capacity}%",
     "interval": 5,
     "on-click": "omarchy-menu power",
     "states": {
@@ -118,10 +164,10 @@
     }
   },
   "bluetooth": {
-    "format": "",
-    "format-disabled": "󰂲",
-    "format-off": "󰂲",
-    "format-connected": "󰂱",
+    "format": "\uf294",
+    "format-disabled": "\udb80\udcb2",
+    "format-off": "\udb80\udcb2",
+    "format-connected": "\udb80\udcb1",
     "format-no-controller": "",
     "tooltip-format": "Devices connected: {num_connections}",
     "on-click": "omarchy-launch-bluetooth"
@@ -132,9 +178,13 @@
     "on-click-right": "pamixer -t",
     "tooltip-format": "Playing at {volume}%",
     "scroll-step": 5,
-    "format-muted": "",
+    "format-muted": "\ueee8",
     "format-icons": {
-      "default": ["", "", ""]
+      "default": [
+        "\uf026",
+        "\uf027",
+        "\uf028"
+      ]
     }
   },
   "group/tray-expander": {
@@ -143,10 +193,13 @@
       "transition-duration": 200,
       "children-class": "tray-group-item"
     },
-    "modules": ["custom/expand-icon", "tray"]
+    "modules": [
+      "custom/expand-icon",
+      "tray"
+    ]
   },
   "custom/expand-icon": {
-    "format": "",
+    "format": "\uf078",
     "tooltip": false
   },
   "custom/screenrecording-indicator": {
@@ -158,5 +211,8 @@
   "tray": {
     "icon-size": 12,
     "spacing": 17
-  }
+  },
+  "include": [
+    "/home/mark/.config/waybar/hyprwhspr-module.jsonc"
+  ]
 }

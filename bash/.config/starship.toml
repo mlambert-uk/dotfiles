@@ -2,12 +2,12 @@
 
 format = """
 $character\
-[](peach)\
+[](red)\
 $directory\
-[](bg:yellow fg:peach)\
+[ ](bg:blue fg:red)\
 $git_branch\
 $git_status\
-[](fg:yellow bg:green)\
+[ ](fg:blue bg:green)\
 $c\
 $rust\
 $golang\
@@ -17,11 +17,8 @@ $java\
 $kotlin\
 $haskell\
 $python\
-[](fg:green bg:sapphire)\
-$conda\
-[ ](fg:sapphire)\
+[ ](fg:green)\
 $cmd_duration\
-$line_break\
 """
 
 palette = 'catppuccin_latte'
@@ -59,7 +56,7 @@ style_root = "bg:red fg:crust"
 format = '[ $user]($style)'
 
 [directory]
-style = "bg:peach fg:crust"
+style = "bg:red fg:crust"
 format = "[ $path ]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
@@ -69,16 +66,18 @@ truncation_symbol = "…/"
 "Downloads" = " "
 "Music" = "󰝚 "
 "Pictures" = " "
+"Wallpapers" = " "
 "Code" = "󰲋 "
+"Videos" = " "
 
 [git_branch]
 symbol = ""
-style = "bg:yellow"
-format = '[[ $symbol $branch ](fg:crust bg:yellow)]($style)'
+style = "bg:blue"
+format = '[[ $symbol $branch ](fg:crust bg:blue)]($style)'
 
 [git_status]
-style = "bg:yellow"
-format = '[[($all_status$ahead_behind )](fg:crust bg:yellow)]($style)'
+style = "bg:blue"
+format = '[[($all_status$ahead_behind )](fg:crust bg:blue)]($style)'
 
 [nodejs]
 symbol = ""
@@ -151,7 +150,7 @@ vimcmd_visual_symbol = '[󱙝](bold fg:yellow)'
 [cmd_duration]
 show_milliseconds = true
 format = " in $duration "
-style = "bg:lavender"
+style = "bg:green"
 disabled = false
 show_notifications = true
 min_time_to_notify = 45000
