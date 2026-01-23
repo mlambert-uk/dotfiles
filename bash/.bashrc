@@ -29,7 +29,7 @@ source <(ng completion script)
 
 [[ "$TERM_PROGRAM" == "kiro" ]] && . "$(kiro --locate-shell-integration-path bash)"
 
-export BW_SESSION="GjLbSSwWC8scZ8L8KfTSNLpBPAjMkFR96/wCYIaHyy2de7z7mHcwLDvooE7KRK9FiMZcK57WElFBiiT3odAQNw=="
+export BW_SESSION=""
 
 function y() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
@@ -48,9 +48,9 @@ alias o="opencode"
 export PATH="$PATH:/home/mark/.lmstudio/bin"
 # End of LM Studio CLI section
 
-export CONFLUENCE_API_TOKEN="ATATT3xFfGF0J3sCSNRHHhHrnFZA10r-ybB1MExP6k98dfQVgUDQgqvcwNgfk18mKx1kUUcAK5BcteCuS8iQvqx2FCAPQFT6k4QvbJv13X9leQCvvgpxevgexYVM_uvlzRPy4YhJ-fFdQ5KU3gu3_wtxWb54fSWVzVBb683cYjXFpzfEXL2SGAM=279E8568"
+export CONFLUENCE_API_TOKEN=""
 export CONFLUENCE_BASE_URL="https://totd-ci.atlassian.net/wiki"
-export CONFLUENCE_EMAIL="mark.lambert@halfords.co.uk"
+export CONFLUENCE_EMAIL=""
 
-export OUTLOOK_EMAIL="mark.lambert@halfords.co.uk"
-export OUTLOOK_PASSWORD="ttdvbhnmjwrqsxpm"
+export OUTLOOK_EMAIL=""
+export OUTLOOK_PASSWORD=""
