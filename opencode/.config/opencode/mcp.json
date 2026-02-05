@@ -1,0 +1,25 @@
+{
+  "mcpServers": {
+    "google-workspace": {
+      "command": "node",
+      "args": ["/home/mark/AI/mcp-google-workspace/dist/index.js"]
+    },
+    "outlook-calendar": {
+      "command": "node",
+      "args": ["/home/mark/AI/mcp-outlook-calendar/dist/index.js"],
+      "env": {
+        "OUTLOOK_EMAIL": "${OUTLOOK_EMAIL}",
+        "OUTLOOK_PASSWORD": "${OUTLOOK_PASSWORD}",
+        "EWS_HOST": "https://outlook.office365.com",
+        "EWS_AUTH": "ntlm"
+      }
+    },
+    "context7": {
+      "command": "npx",
+      "args": ["-y", "@context7/mcp-server@latest"],
+      "env": {
+        "CONTEXT7_API_KEY": "${CONTEXT7_API_KEY}"
+      }
+    }
+  }
+}
