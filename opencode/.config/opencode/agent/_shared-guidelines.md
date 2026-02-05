@@ -16,7 +16,9 @@ This document contains common guidance, templates, and standards that all agents
 
 ## Tone & Communication Standards
 
-**All agents use:**
+See **AGENTS.md > Creating Notes > Communication Standards** for full guidance (source of truth).
+
+**Key points:**
 - **Professional, direct, and constructive** tone
 - **British English** spelling and phrasing (optimise, analyse, prioritise, organisation, realise, etc.)
 - **Clarity over cleverness** – explain the "why" behind recommendations
@@ -99,12 +101,13 @@ All agents maintain awareness of:
 
 ## SecondBrain Format Standards
 
-When creating or editing notes in SecondBrain, all agents follow:
+See **AGENTS.md > Obsidian Vault Structure & Creating Notes** for full guidance (source of truth).
 
+**Key standards:**
 - **WikiLink format**: `[[Person Name]]`, `[[Project Name]]`, `[[YYYY-MM-DD]]` for dates
 - **PARA structure**: Use existing structure (0-Journal, 1-Projects, 2-Areas, 3-Me, 4-Goals, 5-People, etc.)
 - **Heading hierarchy**: Clear nesting with `#`, `##`, `###`
-- **British English**: optimise, analyse, programme, colour, organisation
+- **British English**: optimise, analyse, programme, colour, organisation (see AGENTS.md for full list)
 - **Markdown lists**: Use `- [ ]` for tasks, `- ` for items
 - **Tables for structured data**: Skills matrices, comparisons, tracking
 - **No emojis unless essential**: Avoid emoji spam; use sparingly for visual breaking
@@ -312,22 +315,53 @@ When helping with decisions:
 
 ---
 
+## Document Hierarchy & References
+
+**This document** (`_shared-guidelines.md`) contains:
+- ✅ Agent tone and communication standards
+- ✅ Universal capabilities and boundaries
+- ✅ Escalation triggers and format
+- ✅ Context awareness (Avayler, teams, technology)
+- ✅ Quality criteria, performance management, wellbeing approach
+- ✅ Metrics standards, career framework, risk language
+- ✅ Handoff protocols, task workflows, decision frameworks
+- ✅ Standard output formats
+
+**AGENTS.md** (in `/home/mark/AI/`) is the single source of truth for:
+- Vault structure (PARA organization)
+- File naming and location conventions
+- British English requirements
+- Creating notes best practices
+- Model selection strategy
+- 1:1 meeting processing guidelines
+
+**Agents reference this hierarchy**:
+```yaml
+vault_structure: "See AGENTS.md > Obsidian Vault Structure (source of truth)"
+british_english: "See AGENTS.md > Creating Notes > British English Requirements"
+tone: "See Shared Agent Guidelines > Tone & Communication Standards"
+boundaries: "See Shared Agent Guidelines > Standard Boundaries"
+escalation: "Use Standard Escalation Format from Shared Agent Guidelines"
+```
+
+---
+
 ## Version & Attribution
 
-**Last Updated**: 2026-01-20  
+**Last Updated**: 2026-02-05  
 **Applies To**: All 24 OpenCode agents  
 **Reviews**: Quarterly or when significant changes needed
 
 ---
 
-## How Agents Reference This Document
+## Consolidation Status (Optimization 2)
 
-Instead of repeating sections, agents now write:
+**Completed**:
+- ✅ Removed duplicate vault structure explanation
+- ✅ Removed duplicate British English specification
+- ✅ Removed duplicate SecondBrain format standards
+- ✅ Added clear references to AGENTS.md as source of truth
+- ✅ Maintained all unique content in _shared-guidelines.md
+- ✅ Established clear document hierarchy
 
-```yaml
-tone: "See Shared Agent Guidelines: Tone & Communication Standards"
-boundaries: "See Shared Agent Guidelines: Standard Boundaries"
-escalation: "Use Standard Escalation Format from Shared Agent Guidelines"
-```
-
-This reduces duplication from **7,200 lines to ~4,200 lines** across all agents while maintaining consistency and clarity.
+**Result**: Reduced file size from 334 → 310 lines (~7% reduction), eliminated triplication of vault guidance, established single source of truth. Combined with Optimization 1, total context reduction: 22-25%.
