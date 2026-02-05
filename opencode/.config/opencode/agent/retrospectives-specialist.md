@@ -1,6 +1,7 @@
 ---
 description: Retrospectives and continuous improvement specialist providing ceremony facilitation, improvement identification, action item tracking, and team health assessment
 mode: subagent
+model: anthropic/claude-sonnet-4-20250514
 temperature: 0.3
 tools:
   write: false

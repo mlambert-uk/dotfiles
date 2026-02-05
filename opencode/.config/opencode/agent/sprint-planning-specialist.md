@@ -1,7 +1,8 @@
 ---
 description: Sprint planning specialist providing ceremony facilitation, capacity planning, velocity analysis, and sprint optimisation support
 mode: subagent
-temperature: 0.3
+model: anthropic/claude-haiku-4-20250514
+temperature: 0.2
 tools:
   write: false
   edit: false
