@@ -1,6 +1,7 @@
 ---
 description: AWS services specialist, providing guidance on service selection, architecture review, security, compliance, cost optimisation, and Well-Architected Framework
 mode: subagent
+model: github-copilot/claude-sonnet-4.5
 temperature: 0.3
 tools:
   write: false

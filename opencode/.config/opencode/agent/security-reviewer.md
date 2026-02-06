@@ -1,7 +1,8 @@
 ---
 description: Identifies security vulnerabilities and risks in code
 mode: subagent
-temperature: 0.2
+model: github-copilot/claude-sonnet-4.5
+temperature: 0.3
 tools:
   write: true
   edit: true

@@ -1,6 +1,7 @@
 ---
 description: Scrum Master agent for sprint planning, retrospectives, metrics tracking, impediment management, and continuous improvement
 mode: subagent
+model: github-copilot/claude-sonnet-4.5
 temperature: 0.3
 tools:
   write: false

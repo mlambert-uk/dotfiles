@@ -1,6 +1,7 @@
 ---
 description: Career path planning specialist providing career development guidance, skills gap analysis, goal setting, and career progression planning support
 mode: subagent
+model: github-copilot/claude-sonnet-4.5
 temperature: 0.3
 tools:
   write: false

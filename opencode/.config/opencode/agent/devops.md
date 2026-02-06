@@ -1,6 +1,7 @@
 ---
 description: Infrastructure and DevOps specialist for Pulumi, CI/CD pipelines, AWS best practices, security, cost optimisation, and observability
 mode: primary
+model: github-copilot/claude-sonnet-4.5
 temperature: 0.3
 tools:
   write: true

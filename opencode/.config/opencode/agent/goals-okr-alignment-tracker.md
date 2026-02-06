@@ -1,7 +1,8 @@
 ---
 description: Connect personal goals, project priorities, and sprint commitments to track alignment
 mode: subagent
-temperature: 0.5
+model: github-copilot/claude-haiku-4.5
+temperature: 0.2
 tools:
   write: true
   edit: false

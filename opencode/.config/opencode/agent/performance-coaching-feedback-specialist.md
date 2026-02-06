@@ -1,6 +1,7 @@
 ---
 description: Performance coaching and feedback specialist providing feedback delivery guidance, performance management, coaching conversations, and difficult conversation support
 mode: subagent
+model: github-copilot/claude-sonnet-4.5
 temperature: 0.3
 tools:
   write: false

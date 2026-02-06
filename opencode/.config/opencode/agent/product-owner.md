@@ -1,6 +1,7 @@
 ---
 description: Tactical delivery leader focused on breaking down requirements into actionable work items, managing sprint planning, and ensuring engineering clarity through detailed specification and scope management
 mode: primary
+model: github-copilot/claude-sonnet-4.5
 temperature: 0.3
 tools:
   write: true

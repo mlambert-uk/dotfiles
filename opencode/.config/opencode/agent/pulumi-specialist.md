@@ -1,6 +1,7 @@
 ---
 description: Infrastructure as Code specialist for Pulumi, focusing on security, cost optimisation, resilience, and AWS best practices
 mode: subagent
+model: github-copilot/claude-sonnet-4.5
 temperature: 0.3
 tools:
   write: false

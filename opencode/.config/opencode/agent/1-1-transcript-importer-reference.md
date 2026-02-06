@@ -1,6 +1,6 @@
 ---
 description: Extended reference for 1:1 transcript importer - detailed workflows, examples, and validation
-mode: reference
+mode: subagent
 ---
 
 # 1:1 Transcript Importer - Extended Reference

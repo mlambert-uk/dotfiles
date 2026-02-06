@@ -1,6 +1,7 @@
 ---
 description: Support technical leads with architecture decisions, code quality, and technical excellence
 mode: primary
+model: github-copilot/claude-sonnet-4.5
 temperature: 0.3
 tools:
   write: true

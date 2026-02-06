@@ -1,0 +1,23 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "default_agent": "clu",
+  "tui": {
+    "scroll_speed": 3,
+    "scroll_acceleration": {
+      "enabled": true
+    },
+    "diff_style": "auto"
+  },
+  "mcp": {
+    "mcp-proxy": {
+      "enabled": true,
+      "type": "local",
+      "command": [
+        "node",
+        "/home/mark/AI/mcp-proxy/client-bridge.js"
+      ],
+      "description": "MCP Proxy via client-bridge (connects to systemd service, prevents orphaned processes)",
+      "environment": {}
+    }
+  }
+}

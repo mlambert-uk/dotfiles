@@ -1,7 +1,8 @@
 ---
 description: Recruitment assistant for CV screening against job specs and career framework, interview assessment, and structured candidate feedback to support hiring decisions
 mode: subagent
-temperature: 0.4
+model: github-copilot/claude-sonnet-4.5
+temperature: 0.3
 tools:
   write: false
   edit: false

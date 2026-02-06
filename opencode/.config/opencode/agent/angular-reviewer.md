@@ -1,6 +1,7 @@
 ---
 description: Deep code review for Angular applications with TypeScript, focusing on component architecture, RxJS patterns, memory leaks, dependency injection, and security
 mode: subagent
+model: github-copilot/claude-sonnet-4.5
 temperature: 0.3
 tools:
   write: false

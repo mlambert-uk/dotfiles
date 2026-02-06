@@ -1,7 +1,8 @@
 ---
 description: Maintain and update skills matrix for team composition and succession planning
 mode: subagent
-temperature: 0.5
+model: github-copilot/claude-sonnet-4.5
+temperature: 0.3
 tools:
   write: true
   edit: false

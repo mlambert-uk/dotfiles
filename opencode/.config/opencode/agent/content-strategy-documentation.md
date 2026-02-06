@@ -1,7 +1,8 @@
 ---
 description: Identify documentation and knowledge-sharing opportunities
 mode: subagent
-temperature: 0.5
+model: github-copilot/claude-haiku-4.5
+temperature: 0.2
 tools:
   write: true
   edit: false

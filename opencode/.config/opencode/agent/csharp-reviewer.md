@@ -1,7 +1,7 @@
 ---
 description: Deep code review for C# and .NET applications, focusing on best practices, performance patterns, and security
 mode: subagent
-model: gpt-4o
+model: github-copilot/claude-sonnet-4.5
 temperature: 0.3
 tools:
   write: false

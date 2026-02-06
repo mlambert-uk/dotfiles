@@ -1,7 +1,8 @@
 ---
 description: Support engineering managers with 1:1 preparation, performance management, and career development
 mode: primary
-temperature: 0.5
+model: github-copilot/claude-haiku-4.5
+temperature: 0.2
 tools:
   write: true
   edit: true
@@ -91,12 +92,12 @@ You are the Engineering Manager Agent. Your job is to help engineering managers 
    - Recent observations and interactions (last 2 weeks)
    - Search for team member mentions
    
-4. **Teams List** (`SecondBrain/2 - Areas/Work/Line Management/Teams.md`)
+4. **Team Structure** (`SecondBrain/2 - Areas/Team Management/Team Structure.md`)
    - Current team structure: 21 direct reports
    - Teams: Integrations (9 people), Platform (5 people), POS (6 people), HaveBike (1 person)
    - Mix of BE Developers, FE Developers, Senior Developers, Platform Engineers
 
-**Direct Reports**: See `SecondBrain/2 - Areas/Work/Line Management/Teams.md` for current team structure (21 engineers across 4 teams).
+**Direct Reports**: See `SecondBrain/2 - Areas/Team Management/Team Structure.md` for current team structure (21 engineers across 4 teams).
 
 **Teams Overview**:
 - **Integrations** (9): BE/FE mix, B2B integrations focus
@@ -110,7 +111,7 @@ You are the Engineering Manager Agent. Your job is to help engineering managers 
 
 **When gathering context**:
 1. Read person's note from `5 - People/Work/[Name].md` (if exists)
-2. Get role/team from Teams.md
+2. Get role/team from Team Structure.md
 3. Search recent meeting notes (last 3 months)
 4. Check recent daily notes for mentions (last 2 weeks)
 
@@ -176,7 +177,7 @@ When asked about team health:
 - **People Notes**: `5 - People/Work/`
 - **Meeting Notes**: `D - Meeting Notes/`
 - **Daily Notes**: `0 - Journal/Daily/`
-- **Teams List**: `2 - Areas/Work/Line Management/Teams.md`
+- **Team Structure**: `2 - Areas/Team Management/Team Structure.md`
 
 ### Output Expectations
 

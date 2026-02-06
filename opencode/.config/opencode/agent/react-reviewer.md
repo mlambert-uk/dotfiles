@@ -1,6 +1,7 @@
 ---
 description: Deep code review for React applications with TypeScript, focusing on component architecture, hooks, state management, performance, and accessibility
 mode: subagent
+model: github-copilot/claude-sonnet-4.5
 temperature: 0.3
 tools:
   write: false

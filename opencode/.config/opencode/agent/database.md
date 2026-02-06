@@ -1,6 +1,7 @@
 ---
 description: PostgreSQL design review, query optimisation, performance analysis, and data architecture guidance
 mode: subagent
+model: github-copilot/claude-sonnet-4.5
 temperature: 0.3
 tools:
   write: true
