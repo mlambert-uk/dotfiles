@@ -1,0 +1,13 @@
+[Unit]
+Description=NAS Backup — sync dotfiles, documents, pictures, wallpapers, and code
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=%h/bash/nas-backup.sh
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=default.target

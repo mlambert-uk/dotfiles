@@ -12,5 +12,8 @@
 **/*.bak.*
 **/*.backup.*
 
+# NAS backup credentials (never track these)
+**/.config/nas-backup/
+
 # OS
 .DS_Store

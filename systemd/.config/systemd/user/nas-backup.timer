@@ -1,0 +1,11 @@
+[Unit]
+Description=NAS Backup Timer — runs on boot and nightly at 02:00
+
+[Timer]
+OnBootSec=2min
+OnCalendar=*-*-* 02:00:00
+Persistent=true
+AccuracySec=5min
+
+[Install]
+WantedBy=timers.target
