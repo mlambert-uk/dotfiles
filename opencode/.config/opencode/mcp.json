@@ -1,9 +1,0 @@
-{
-  "mcpServers": {
-    "mcp-proxy": {
-      "command": "node",
-      "args": ["/home/mark/AI/mcp-proxy/client-bridge.js"],
-      "env": {}
-    }
-  }
-}

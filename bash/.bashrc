@@ -38,7 +38,8 @@ function y() {
 }
 
 export CHROME_BIN="/usr/bin/chromium"
-export PATH="$HOME/.local/bin:$PATH"
+export KIRO_BIN="/home/mark/.local/share/Kiro"
+export PATH="$HOME/.local/bin:$PATH:$KIRO_BIN"
 
 alias o="opencode"
 
@@ -46,4 +47,22 @@ alias o="opencode"
 export PATH="$PATH:/home/mark/.lmstudio/bin"
 # End of LM Studio CLI section
 
-source ~/.secrets 
+source ~/.secrets
+
+# Load environment variables from ~/.env
+if [ -f ~/.env ]; then
+    export $(grep -v '^#' ~/.env | xargs)
+fi
+
+export PATH="$HOME/scripts:$PATH"
+export PATH="$PATH:$HOME/.local/bin"
+
+# kiro-cli shortcuts
+alias k='kiro-cli'
+alias kc='kiro-cli chat'
+
+# ZED Edutir shortcuts
+alias zed='zeditor'
+
+# Govee CLI
+export PATH="$HOME/Code/govee-cli/.venv/bin:$PATH"

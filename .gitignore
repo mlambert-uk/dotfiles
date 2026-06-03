@@ -1,0 +1,16 @@
+# OpenCode generated/installed files
+**/node_modules/
+**/bun.lock
+**/package-lock.json
+**/backups/
+
+# Old backup directories
+**/*.bak/
+**/opencode.bak/
+
+# Hyprland backup files
+**/*.bak.*
+**/*.backup.*
+
+# OS
+.DS_Store

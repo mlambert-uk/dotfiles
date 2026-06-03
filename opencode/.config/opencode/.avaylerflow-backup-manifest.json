@@ -1,0 +1,9 @@
+{
+  "timestamp": "2026-04-29T10:00:57.112Z",
+  "backups": [
+    "/home/mark/.config/opencode/commands.avaylerflow-backup-2026-04-29T10-00-57-097Z",
+    "/home/mark/.config/opencode/agents.avaylerflow-backup-2026-04-29T10-00-57-097Z",
+    "/home/mark/.config/opencode/skills.avaylerflow-backup-2026-04-29T10-00-57-097Z"
+  ],
+  "version": "1.0.0"
+}
