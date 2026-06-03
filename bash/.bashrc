@@ -1,11 +1,3 @@
-# OPENSPEC:START
-# OpenSpec shell completions configuration
-if [ -d "/home/mark/.local/share/bash-completion/completions" ]; then
-  for f in "/home/mark/.local/share/bash-completion/completions"/*; do
-    [ -f "$f" ] && . "$f"
-  done
-fi
-# OPENSPEC:END
 
 # If not running interactively, don't do anything (leave this at the top of this file)
 [[ $- != *i* ]] && return
