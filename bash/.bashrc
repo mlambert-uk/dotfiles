@@ -58,3 +58,27 @@ alias zed='zeditor'
 
 # Govee CLI
 export PATH="$HOME/Code/govee-cli/.venv/bin:$PATH"
+
+# Sync dotfiles repo with current config
+dotfiles-sync() {
+  local repo="$HOME/dotfiles"
+  echo "Syncing dotfiles..."
+  rsync -a --delete \
+    --exclude='node_modules/' --exclude='backups/' \
+    --exclude='bun.lock' --exclude='package-lock.json' \
+    --exclude='skills.avaylerflow-backup-*' \
+    --exclude='*.bak.*' --exclude='*.backup.*' \
+    ~/.config/opencode/ "$repo/opencode/.config/opencode/"
+  rsync -a --delete \
+    --exclude='*.bak.*' --exclude='*.backup.*' \
+    --exclude='shaders/' --exclude='xdph.conf' \
+    ~/.config/hypr/ "$repo/hypr/.config/hypr/"
+  cp ~/.bashrc "$repo/bash/.bashrc"
+  cd "$repo" && git add -A
+  if git diff --cached --quiet; then
+    echo "Nothing to commit — dotfiles already up to date."
+  else
+    git commit -m "dotfiles sync $(date '+%Y-%m-%d %H:%M')" && git push && echo "Dotfiles synced and pushed."
+  fi
+  cd - > /dev/null
+}
